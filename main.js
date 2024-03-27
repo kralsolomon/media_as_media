@@ -2,8 +2,9 @@ const articlesContainer = document.getElementById('container');
 const articleTemplate = document.getElementById('article-template');
 
 document.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const postId = urlParams.split('/').pop();
+
+    const currentPath = window.location.pathname;
+    const postId = currentPath.split('/').pop();
 
     if (postId) {
         loadArticleById(postId);
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loadArticles();
     }
 });
+
 
 function loadArticles() {
     fetch('https://jsonplaceholder.typicode.com/posts')
@@ -44,6 +46,8 @@ function renderArticle(article) {
 
     articlesContainer.appendChild(clone);
 }
+
+
 
 
 
