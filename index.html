@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media as Medium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="main_container">
+    <h1>
+        Hello, world!
+    </h1>
+</div>
+
+<a href="/posts">Posts</a>
+
+<div id="container">
+
+</div>
+
+<template id="article-template">
+    <div class="article-container">
+        <div class="top_text">
+            <img src="./assets/avatar.png" alt="picture">
+            <p style="color: black">Authors name in Topics Name</p>
+            <p style="padding: 0 0px 0 10px">·</p>
+            <p style="padding-left: 10px" id="date"></p>
+        </div>
+
+        <div class="main_text">
+            <p style="padding-top: 48px" class="title"></p>
+            <p style="padding-top: 24px" class="body"></p>
+        </div>
+
+        <div class="lower_text">
+            <button style="padding: 0 10px 0 10px" id="type">Java Script</button>
+            <p style="padding: 0 15px 0 15px; color:grey" id="readTime"> 12 min read </p>
+            <p style="padding: 0 15px 0 0px; color:grey">·</p>
+            <p style="color:grey">Selected for you</p>
+        </div>
+
+        <hr style="margin-bottom: 12px;">
+        <img class="article_image" id="img" src="./assets/Img.png" alt="picture">
+    </div>
+</template>
+
+<script src="./index.js"></script>
+</body>
+</html>
